@@ -1,0 +1,213 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+}
+header {
+    background-color: lightgreen;
+    height: 100%;
+}
+main {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: row;
+}
+aside {
+    background-color: lightblue;
+    width: 20%;
+    height: 800px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+}
+footer {
+    background-color: lightsalmon;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+nav {
+    width: 100%;
+    height: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li {
+    height: 100%;
+}
+nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    transition: background-color 0.5s ease;
+}
+nav ul li a:hover {
+    background-color: green;
+    color: #eee;
+    transition: background-color 0.5s ease;
+}
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flash-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
+    top: 0;
+    height: 859px;
+}
+.flash-close {
+    position: absolute;
+    top: 50px; 
+    right: 50px;
+}
+.flash-close>a {
+    background-color: #eee;
+    padding: 6px 11px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: 700;
+}
+.flash {  
+    background-color: lightsalmon;
+    padding: 20px 50px;
+    font-size: 20px;
+}
+.list-no-style {
+    list-style: none;
+}
+.no-padding-margin {
+    padding: 0;
+    margin: 0;
+}
+.table-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.base-table {
+    width: 90%;
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+}
+.base-table>tbody>tr>td>form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.base-table>tbody>tr>td>form>input {
+    cursor: pointer;
+}
+.base-table>tbody>tr {
+    transition: background-color 0.5s ease;
+}
+.base-table>tbody>tr:hover:not(:first-of-type) {
+    background-color: lightgoldenrodyellow;
+    transition: background-color 0.5s ease;
+}
+.base-table>tbody>tr:nth-of-type(even) {
+    background-color: lightblue;
+}
+.base-table>tbody>tr:nth-of-type(odd) {
+    background-color: lightcyan;
+}
+.base-table>tbody>tr:first-of-type {
+    text-transform: uppercase;
+    background-color: lightgoldenrodyellow;
+}
+.base-table>tbody>tr>td:last-of-type {
+    text-align: center;
+}
+.employee-form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.employee-form-content>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.employee-form-input>#employees {
+    width: 20px;
+    height: 20px;
+}
+.employee-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.boof-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.employee-form-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.employee-form-input>label {
+    width: 20%;
+    margin: 10px 0;
+}
+.employee-form-input>input {
+    width: 80%;
+    margin: 5px 0;
+}
+.employee-form-input>select {
+    width: 80%;
+    margin: 10px 0;
+    text-align: center;
+}
+.employee-form-input>select>option {
+    margin: 0 20px;
+}
+.employee-form-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+}
+.employee-form-submit>input {
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #333;
+    padding: 5px;
+    border-radius: 3px;
+}
+.employee-form-submit>input:hover {
+    cursor: pointer;
+    color: #eee;
+}
+.form-button {
+    text-align: center;
+}
